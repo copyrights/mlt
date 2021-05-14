@@ -1,0 +1,64 @@
+---
+schema_version: 0.1
+type: filter
+identifier: obs_chroma
+title: Chroma Key (OBS)
+version: 0.1
+copyright: Frank Adaemmer
+creator: Frank Adaemmer
+license: GPLv3
+language: en
+tags:
+  - Video
+description:
+
+parameters:
+  - identifier: chroma
+    title: Key Color Type
+    type: interger
+    minimum: 0
+    maximum: 0xffffff
+    default: 0x00ff00
+    mutable: yes
+  - identifier: similarity
+    title: Similarity
+    type: float
+    minimum: 1.0
+    maximum: 1000.0
+    default: 400.0
+  - identifier: smoothness
+    title: Smoothness
+    type: float
+    minimum: 1.0
+    maximum: 1000.0
+    default: 80.0
+  - identifier: spill
+    title: Key Color Spill Reduction
+    type: float
+    minimum: 1.0
+    maximum: 1000.0
+    default: 100.0
+  - identifier: opacity
+    title: Opacity
+    type: float
+    minimum: 0.0
+    maximum: 100.0
+    default: 100.0
+  - identifier: contrast
+    title: Contrast
+    type: float
+    minimum: -1.0
+    maximum: 1.0
+    default: 0.0
+  - identifier: brightness
+    title: Brightness
+    type: float
+    minimum: -1.0
+    maximum: 1.0
+    default: 0.0
+  - identifier: gamma
+    title: Gamma
+    type: float
+    minimum: -1.0
+    maximum: 1.0
+    default: 0.0
